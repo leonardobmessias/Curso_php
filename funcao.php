@@ -21,6 +21,25 @@
     }
     $r = multiplica(10,7);
 
+    #funcao com  multiplos argumentos
+    function subtrai(){
+        $p = func_get_args();
+        $tot = func_num_args();
+        $s = 0;
+        for($i=0; $i< $tot;$i++ ){
+            if($i==0) {
+                $s = $p[$i] ;
+            }
+            else{
+                $s = $s - $p[$i];
+
+            }
+        }
+        return $s;
+    }
+    $resp = subtrai(100,10,5);
+
+    echo $resp;
 
     ?>
 </div>
